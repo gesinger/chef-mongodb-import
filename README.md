@@ -33,3 +33,17 @@ See full documentation for mongoimport for all available parameters.
 * `mongodb_import[:use_journal]`
 * `mongodb_import[:ignore_blanks]`
 * `mongodb_import[:tail]` - Any additional parameters you want to pass to mongoimport
+
+### Building and Testing
+
+mongodb-import uses an internal cookbook for testing called mongodb-import-test.
+This does some file copying and external cookbook running in order to properly
+test that the data was imported.
+
+In order to test everything yourself:
+
+1) Check out the repo
+
+2) Run `berks install`
+
+3) Run `kitchen test`
