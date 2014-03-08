@@ -9,5 +9,4 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[mongodb-import::default]
-    attributes: {}
+      - recipe[mongodb-import-test::default]
