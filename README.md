@@ -8,6 +8,18 @@ Add to your Berksfile or Cheffile:
 
   cookbook 'mongodb-import', :git => 'git://github.com/gesinger/mongodb-import.git'
 
+Specify the attributes you want to use, and the mongodb-import::default recipe
+in your run list (this example uses the vagrant synced folder):
+
+  "mongodb_import": {
+    "db": "mydb",
+    "collection": "mycollection",
+    "file": "/vagrant/files/exported_data.json"
+  },
+  "run_list": [
+    "recipe[mongodb-import::default]"
+  ]
+
 ### Attributes
 
 See full documentation for mongoimport for all available parameters.
