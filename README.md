@@ -6,13 +6,14 @@ A Chef cookbook for importing data into a mongodb database.
 
 Add to your Berksfile or Cheffile:
 
-```
+```ruby
   cookbook 'mongodb-import', :git => 'git://github.com/gesinger/mongodb-import.git'
 ```
 
 Specify the attributes you want to use, and the mongodb-import::default recipe
 in your run list (this example uses the vagrant synced folder):
 
+```json
   "mongodb_import": {
     "db": "mydb",
     "collection": "mycollection",
@@ -21,6 +22,7 @@ in your run list (this example uses the vagrant synced folder):
   "run_list": [
     "recipe[mongodb-import::default]"
   ]
+```
 
 ### Attributes
 
