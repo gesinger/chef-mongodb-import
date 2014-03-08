@@ -10,7 +10,7 @@
   [ "$status" -eq 0 ]
 }
 
-@test "mongodb contains nine elements" {
+@test "mongodb contains three elements" {
   run mongo ndb --quiet --eval "db.nutrition.stats().count"
-  [ "$output" = "9" ]
+  [ "$output" = "3" ]
 }
