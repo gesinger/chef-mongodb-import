@@ -46,8 +46,7 @@ test that the data was imported.
 
 In order to test everything yourself:
 
-1) Check out the repo
-
-2) Run `berks install`
-
-3) Run `kitchen test`
+* Check out the repo
+* Run `bundle install`
+* Run `berks install`
+* Run `kitchen test`
