@@ -7,7 +7,7 @@ A Chef cookbook for importing data into a mongodb database.
 Add to your Berksfile or Cheffile:
 
 ```ruby
-  cookbook 'mongodb-import', :git => 'git://github.com/gesinger/mongodb-import.git'
+  cookbook 'mongodb-import', :git => 'git://github.com/gesinger/chef-mongodb-import.git'
 ```
 
 Specify the attributes you want to use, and the mongodb-import::default recipe
