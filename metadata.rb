@@ -5,4 +5,4 @@ license          'MIT'
 description      'Imports data into a mongodb database'
 version          '0.0.1'
 
-recipe 'mongodb-import', 'Imports data into a mongodb databse'  # TODO hyphen?
+recipe 'mongodb-import', 'Imports data into a mongodb databse'
